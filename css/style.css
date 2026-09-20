@@ -18,7 +18,7 @@ body {
 /* Cada letra individual */
 .char {
   display: inline-block;
-  color: #ff3b30; /* Rojo original de GitByBit */
+  color: #4665b9; /* Rojo original de GitByBit */
   /* Sombra ambiental sutil */
   white-space: pre;
   text-shadow: 0px 6px 15px rgba(0, 0, 0, 0.6);

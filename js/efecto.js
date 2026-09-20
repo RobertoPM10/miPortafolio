@@ -42,7 +42,7 @@ tl.to('.char', {
   y: 0,
   scaleY: 1,
   scaleX: 1,
-  color: '#ff3b30',
+  color: '#5d86c5',
   textShadow: '0px 6px 15px rgba(0, 0, 0, 0.6)',
   duration: 0.85,
   ease: "elastic.out(1.1, 0.35)", // Rebote elástico al bajar
