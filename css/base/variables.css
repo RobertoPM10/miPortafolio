@@ -1,0 +1,17 @@
+:root {
+  --bg-color: #000000;
+  --card-bg: rgba(18, 18, 18, 0.8);
+  --border-color: #2a2a2a;
+  
+  /* Colores Neón */
+  --neon-cyan: #00e5ff;
+  --neon-green: #00ff88;
+  --neon-blue: #0044ff;
+  
+  /* Textos */
+  --text-main: #ffffff;
+  --text-body: #cbd5e1;
+  --text-muted: #a0aec0;
+  --text-subtle: #64748b;
+  --text-light: rgb(242, 242, 243);
+}

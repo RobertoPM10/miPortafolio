@@ -1,0 +1,16 @@
+.sobre-mi-contenido {
+  max-width: 700px;
+  text-align: center;
+}
+
+.sobre-mi-contenido p {
+  color: var(--text-body);
+  font-size: 1.1rem;
+  line-height: 1.7;
+  margin-bottom: 20px;
+}
+
+.sobre-mi-contenido strong {
+  color: var(--neon-cyan);
+  font-weight: 600;
+}

@@ -1,0 +1,14 @@
+/* Configuración Base */
+@import './base/variables.css';
+@import './base/global.css';
+
+/* Componentes Comunes */
+@import './components/navbar.css';
+@import './components/buttons.css';
+
+/* Secciones */
+@import './components/home.css';
+@import './components/sobreMi.css';
+@import './components/proyectos.css';
+@import './components/skills.css';
+@import './components/contacto.css';
