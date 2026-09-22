@@ -11,9 +11,10 @@
     <nav class="menu">
       <span class="logo"><a href="#home">RPM</a></span>
       <ul>
-        <li><a href="#home">inicio</a></li>
+        <li><a href="#home">Inicio</a></li>
         <li><a href="#sobreMi">Sobre mí</a></li>
         <li><a href="#skills">Skills</a></li>
+        <li><a href="#proyectos">Proyectos</a></li>
         <li><a href="#contacto">Contacto</a></li>
       </ul>
     </nav>
@@ -54,102 +55,196 @@
 
     <section class="secciones" id="skills">
       <h2 class="subtitulo">Mis Skills</h2>
+      <div class="skills-container">
+        <!-- Frontend -->
+        <article class="skills-card">
+          <h3>Frontend</h3>
+          <ul class="skills-list">
+            <li><span>React.js</span></li>
+            <li><span>Vite</span></li>
+            <li><span>JavaScript (ES6+)</span></li>
+            <li><span>HTML5 & CSS3</span></li>
+          </ul>
+        </article>
+
+        <!-- Backend -->
+        <article class="skills-card">
+          <h3>Backend</h3>
+          <ul class="skills-list">
+            <li><span>PHP</span></li>
+            <li><span>Laravel (11 / 12)</span></li>
+            <li><span>Node.js</span></li>
+            <li><span>APIs RESTful</span></li>
+          </ul>
+        </article>
+
+        <!-- Bases de Datos & Herramientas -->
+        <article class="skills-card">
+          <h3>Bases de Datos & Herramientas</h3>
+          <ul class="skills-list">
+            <li><span>MySQL</span></li>
+            <li><span>PostgreSQL</span></li>
+            <li><span>Git & GitHub</span></li>
+            <li><span>Laravel Herd</span></li>
+          </ul>
+        </article>
+      </div>
     </section>
-    
+
     <section class="secciones" id="proyectos">
-  <h2 class="subtitulo">Proyectos</h2>
+      <h2 class="subtitulo">Proyectos</h2>
 
-  <div class="proyectos-container">
+      <div class="proyectos-container">
+        <!-- PROYECTO 1 -->
+        <article class="tarjeta-proyecto">
+          <div class="proyecto-header">
+            <span class="tag-badge">Residencias Profesionales</span>
+            <h3>Módulo de Control de Almacenes para SIAC</h3>
+          </div>
 
-    <!-- PROYECTO 1 -->
-    <article class="tarjeta-proyecto">
-      <div class="proyecto-header">
-        <span class="tag-badge">Residencias Profesionales</span>
-        <h3>Módulo de Control de Almacenes para SIAC</h3>
+          <div class="proyecto-body">
+            <p class="proyecto-desc">
+              Desarrollo de un módulo integral para la gestión de inventarios,
+              enfocado en optimizar el flujo de entradas y salidas de
+              mercancías.
+            </p>
+
+            <p class="proyecto-impacto">
+              <strong>Impacto:</strong> Digitalización del control de stock,
+              permitiendo una administración eficiente y reducción de
+              discrepancias en almacén.
+            </p>
+
+            <div class="tech-tags">
+              <span>React.js</span>
+              <span>Laravel 11</span>
+              <span>MySQL</span>
+            </div>
+          </div>
+
+          <div class="proyecto-footer">
+            <span class="confidencial-text"
+              >🔒 Proyecto institucional / Propiedad de la empresa</span
+            >
+          </div>
+        </article>
+
+        <!-- PROYECTO 2 -->
+        <article class="tarjeta-proyecto">
+          <div class="proyecto-header">
+            <span class="tag-badge">Harmonizen</span>
+            <h3>Sistema de Análisis de Proceso de Adquisiciones</h3>
+          </div>
+
+          <div class="proyecto-body">
+            <p class="proyecto-desc">
+              Diseño e implementación de un sistema web para la automatización
+              del proceso de adquisiciones de compra, sustituyendo tareas
+              manuales por flujos lógicos automáticos.
+            </p>
+
+            <p class="proyecto-impacto">
+              <strong>Impacto:</strong> Optimización del ciclo de compras y
+              mejora en la trazabilidad de los procesos operativos de la
+              empresa.
+            </p>
+
+            <div class="tech-tags">
+              <span>React + Vite</span>
+              <span>Laravel 12</span>
+              <span>PostgreSQL</span>
+            </div>
+          </div>
+
+          <div class="proyecto-footer">
+            <span class="confidencial-text"
+              >🔒 Proyecto privado / Propiedad de la empresa</span
+            >
+          </div>
+        </article>
+
+        <!-- PROYECTO 3 -->
+        <article class="tarjeta-proyecto">
+          <div class="proyecto-header">
+            <span class="tag-badge">Alltub</span>
+            <h3>Sistema de Tickets para Solicitudes de Cotizaciones</h3>
+          </div>
+
+          <div class="proyecto-body">
+            <p class="proyecto-desc">
+              Creación de una plataforma de gestión de tickets para la
+              automatización de solicitudes de cotización de compras.
+            </p>
+
+            <p class="proyecto-impacto">
+              <strong>Impacto:</strong> Centralización de las solicitudes de
+              compra para Alltub, agilizando la gestión de presupuestos y la
+              respuesta de proveedores.
+            </p>
+
+            <div class="tech-tags">
+              <span>React + Vite</span>
+              <span>Laravel 12</span>
+              <span>PostgreSQL</span>
+            </div>
+          </div>
+
+          <div class="proyecto-footer">
+            <span class="confidencial-text"
+              >🔒 Proyecto privado / Propiedad de la empresa</span
+            >
+          </div>
+        </article>
       </div>
-      
-      <div class="proyecto-body">
-        <p class="proyecto-desc">
-          Desarrollo de un módulo integral para la gestión de inventarios, enfocado en optimizar el flujo de entradas y salidas de mercancías.
-        </p>
-
-        <p class="proyecto-impacto">
-          <strong>Impacto:</strong> Digitalización del control de stock, permitiendo una administración eficiente y reducción de discrepancias en almacén.
-        </p>
-
-        <div class="tech-tags">
-          <span>React.js</span>
-          <span>Laravel 11</span>
-          <span>MySQL</span>
-        </div>
-      </div>
-
-      <div class="proyecto-footer">
-        <span class="confidencial-text">🔒 Proyecto institucional / Propiedad de la empresa</span>
-      </div>
-    </article>
-
-    <!-- PROYECTO 2 -->
-    <article class="tarjeta-proyecto">
-      <div class="proyecto-header">
-        <span class="tag-badge">Harmonizen</span>
-        <h3>Sistema de Análisis de Proceso de Adquisiciones</h3>
-      </div>
-      
-      <div class="proyecto-body">
-        <p class="proyecto-desc">
-          Diseño e implementación de un sistema web para la automatización del proceso de adquisiciones de compra, sustituyendo tareas manuales por flujos lógicos automáticos.
-        </p>
-
-        <p class="proyecto-impacto">
-          <strong>Impacto:</strong> Optimización del ciclo de compras y mejora en la trazabilidad de los procesos operativos de la empresa.
-        </p>
-
-        <div class="tech-tags">
-          <span>React + Vite</span>
-          <span>Laravel 12</span>
-          <span>PostgreSQL</span>
-        </div>
-      </div>
-
-      <div class="proyecto-footer">
-        <span class="confidencial-text">🔒 Proyecto privado / Propiedad de la empresa</span>
-      </div>
-    </article>
-
-    <!-- PROYECTO 3 -->
-    <article class="tarjeta-proyecto">
-      <div class="proyecto-header">
-        <span class="tag-badge">Alltub</span>
-        <h3>Sistema de Tickets para Solicitudes de Cotizaciones</h3>
-      </div>
-      
-      <div class="proyecto-body">
-        <p class="proyecto-desc">
-          Creación de una plataforma de gestión de tickets para la automatización de solicitudes de cotización de compras.
-        </p>
-
-        <p class="proyecto-impacto">
-          <strong>Impacto:</strong> Centralización de las solicitudes de compra para Alltub, agilizando la gestión de presupuestos y la respuesta de proveedores.
-        </p>
-
-        <div class="tech-tags">
-          <span>React + Vite</span>
-          <span>Laravel 12</span>
-          <span>PostgreSQL</span>
-        </div>
-      </div>
-
-      <div class="proyecto-footer">
-        <span class="confidencial-text">🔒 Proyecto privado / Propiedad de la empresa</span>
-      </div>
-    </article>
-
-  </div>
-</section>
+    </section>
 
     <section class="secciones" id="contacto">
       <h2 class="subtitulo">Contacto</h2>
+      <div class="contacto-container">
+        <p class="contacto-intro">
+          ¿Tienes un proyecto en mente o estás buscando incorporar a un
+          desarrollador a tu equipo? ¡Hablemos!
+        </p>
+
+        <div class="contacto-cards">
+          <!-- Correo -->
+          <a href="mailto:tu-correo@ejemplo.com" class="contacto-item">
+            <span class="contacto-icon">✉️</span>
+            <div class="contacto-text">
+              <span class="contacto-label">Email</span>
+              <span class="contacto-val">tu-correo@ejemplo.com</span>
+            </div>
+          </a>
+
+          <!-- LinkedIn -->
+          <a
+            href="https://linkedin.com/in/tu-usuario"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="contacto-item"
+          >
+            <span class="contacto-icon">💼</span>
+            <div class="contacto-text">
+              <span class="contacto-label">LinkedIn</span>
+              <span class="contacto-val">Roberto Pérez Marín</span>
+            </div>
+          </a>
+
+          <!-- GitHub -->
+          <a
+            href="https://github.com/tu-usuario"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="contacto-item"
+          >
+            <span class="contacto-icon">💻</span>
+            <div class="contacto-text">
+              <span class="contacto-label">GitHub</span>
+              <span class="contacto-val">github.com/tu-usuario</span>
+            </div>
+          </a>
+        </div>
+      </div>
     </section>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
     <script src="js/efecto.js"></script>

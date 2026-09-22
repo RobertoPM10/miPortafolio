@@ -115,7 +115,8 @@ a {
 .subtitulo {
   font-size: 2rem;
   color: #fff;
-  margin-bottom: 30px;
+  
+  margin-top: 50px;
   /* Opcional: Borde inferior estilo neón */
   border-bottom: 2px solid #00ff88;
   padding-bottom: 8px;
@@ -231,4 +232,131 @@ a {
   font-size: 0.8rem;
   color: #64748b;
   font-style: italic;
+}
+
+/* ==========================================
+   SECCIÓN SKILLS
+   ========================================== */
+.skills-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 20px 0;
+}
+
+.skills-card {
+  background-color: rgba(18, 18, 18, 0.8);
+  border: 1px solid #2a2a2a;
+  border-radius: 12px;
+  padding: 24px;
+  backdrop-filter: blur(5px);
+  transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skills-card:hover {
+  transform: translateY(-5px);
+  border-color: #00ff88;
+  box-shadow: 0 0 20px rgba(0, 255, 136, 0.15);
+}
+
+.skills-card h3 {
+  color: #00ff88;
+  font-size: 1.2rem;
+  margin-bottom: 18px;
+  border-bottom: 1px solid #2a2a2a;
+  padding-bottom: 10px;
+}
+
+.skills-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.skills-list li span {
+  color: #cbd5e1;
+  font-size: 1rem;
+  display: inline-block;
+  position: relative;
+  padding-left: 18px;
+}
+
+/* Indicador de viñeta estilo consola neón */
+.skills-list li span::before {
+  content: ">";
+  position: absolute;
+  left: 0;
+  color: #00e5ff;
+  font-weight: bold;
+}
+
+/* ==========================================
+   SECCIÓN CONTACTO
+   ========================================== */
+.contacto-container {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 20px 0;
+}
+
+.contacto-intro {
+  color: #cbd5e1;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 35px;
+}
+
+.contacto-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.contacto-item {
+  background-color: rgba(18, 18, 18, 0.8);
+  border: 1px solid #2a2a2a;
+  border-radius: 12px;
+  padding: 18px 24px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  text-decoration: none;
+  min-width: 240px;
+  transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contacto-item:hover {
+  transform: translateY(-4px);
+  border-color: #00e5ff;
+  box-shadow: 0 0 15px rgba(0, 229, 255, 0.2);
+}
+
+.contacto-icon {
+  font-size: 1.5rem;
+}
+
+.contacto-text {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.contacto-label {
+  color: #00ff88;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.contacto-val {
+  color: #ffffff;
+  font-size: 0.95rem;
+  font-weight: 500;
 }
