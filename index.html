@@ -4,19 +4,51 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="css/efectoLetras.css">
     <title>Mi portafolio</title>
   </head>
   <body>
-   <nav class="menu">
-    <span class="logo">RPM</span>
-    <ul>
-        <li>Sobre mi</li>
-        <li>Skills</li>
-        <li>Contacto</li>
-    </ul>
-</nav>
-    <!--<h1 class="animated-title" id="logo">Bienvenid@s a mi portafolio</h1>
-    <h2 class="subtitulo">Ing.Roberto Perez Marin</h2>-->
+    <header class="home" id="home">
+      <nav class="menu">
+        <span class="logo">RPM</span>
+        <ul>
+          <li><a href="#home">inicio</a></li>
+          <li><a href="#sobreMi">Sobre mí</a></li>
+          <li>Skills</li>
+          <li>Contacto</li>
+        </ul>
+      </nav>
+      <div class="home-content">
+        <h1 class="animated-title" id="logo">Roberto Perez Marin</h1>
+        <h2>Ingeniero en Sistemas Computacionales</h2>
+        <div class="buttons">
+          <a href="#proyectos"><button class="btn" >Proyectos</button></a>
+          <button class="btn">Descargar CV</button>
+          <button class="btn">Contacto</button>
+        </div>
+      </div>
+    </header>
+
+    <section class="sobreMi" id="sobreMi">
+      <h2 >Sobre mí</h2>
+      <div class="sobre-mi-contenido">
+        <p>
+          Soy un apasionado por el <strong>desarrollo de software</strong> y el
+          diseño de soluciones eficientes. Mi entusiasmo me impulsa a ser un
+          profesional <strong>responsable y organizado</strong>, lo cual me
+          lleva a disfrutar y contribuir activamente al trabajo en equipo.
+        </p>
+        <p>
+          Siempre estoy en busca de retos que me impulsen a crecer de manera
+          profesional. Poseo una gran
+          <strong>disposición para el aprendizaje continuo</strong>, lo cual me
+          permite abordar desafíos técnicos con total confianza.
+        </p>
+      </div>
+    </section>
+    <section class="proyectos" id="proyectos">
+        <h2>proyectos</h2>
+    </section>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
     <script src="js/efecto.js"></script>
   </body>

@@ -4,11 +4,11 @@ logo.innerHTML = '';
 
 // Paleta de colores suaves y difuminados para el halo de luz (glow)
 const hoverColors = [
-  { color: '#38ef7d', glow: 'rgba(56, 239, 125, 0.45)' },  // Menta / Verde neón
-  { color: '#ff77a9', glow: 'rgba(255, 119, 169, 0.45)' }, // Rosa neón
-  { color: '#ffd166', glow: 'rgba(255, 209, 102, 0.45)' }, // Amarillo cálido vibrante
-  { color: '#4cc9f0', glow: 'rgba(76, 201, 240, 0.45)' },  // Cían brillante
-  { color: '#b5179e', glow: 'rgba(181, 23, 158, 0.45)' }   // Violeta / Magenta neón
+  { color: '#00ff88', glow: 'rgba(0, 255, 136, 0.45)' },  // Verde Terminal (Matrix)
+  { color: '#00e5ff', glow: 'rgba(0, 229, 255, 0.45)' },  // Cian Neón
+  { color: '#3a86ff', glow: 'rgba(58, 134, 255, 0.45)' },  // Azul Eléctrico
+  { color: '#00b4d8', glow: 'rgba(0, 180, 216, 0.45)' },  // Azul Turquesa / Dev
+  { color: '#7000ff', glow: 'rgba(112, 0, 255, 0.45)' }   // Púrpura Código / Sintaxis
 ];
 
 // Separar cada letra en su propio <span>

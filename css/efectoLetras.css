@@ -1,0 +1,21 @@
+/* Contenedor principal con fuente delgada */
+.animated-title {
+  font-family: "Inter Condensed", "Arial Narrow", sans-serif;
+  font-size: 3.5rem;
+  letter-spacing: -1.5px;
+  cursor: pointer;
+  text-align: center;
+}
+
+/* Cada letra individual */
+.char {
+  display: inline-block;
+  color: #e2e8f0; /* Rojo original de GitByBit */
+  /* Sombra ambiental sutil */
+  white-space: pre;
+  text-shadow: 0px 6px 15px rgba(0, 0, 0, 0.6);
+  transition:
+    color 0.4s cubic-bezier(0.16, 1, 0.3, 1),
+    text-shadow 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+  will-change: transform, text-shadow;
+}
