@@ -12,3 +12,6 @@
 @import './components/proyectos.css';
 @import './components/skills.css';
 @import './components/contacto.css';
+
+/* Adaptabilidad para Celulares y Tablets */
+@import './base/responsive.css';

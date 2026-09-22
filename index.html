@@ -1,15 +1,20 @@
 <!doctype html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/css/main.css" />
+    <meta
+      name="description"
+      content="Portafolio profesional de Roberto Perez Marin - Ingeniero en Sistemas Computacionales y Desarrollador Full Stack."
+    />
+    <title>Roberto Perez Marin | Portafolio</title>
+    <link rel="stylesheet" href="css/main.css" />
     <link rel="stylesheet" href="css/efectoLetras.css" />
-    <title>Mi portafolio</title>
   </head>
   <body>
-    <nav class="menu">
-      <span class="logo"><a href="#home">RPM</a></span>
+    <!-- Menú de navegación principal -->
+    <nav class="menu" aria-label="Navegación principal">
+      <a href="#home" class="logo">RPM</a>
       <ul>
         <li><a href="#home">Inicio</a></li>
         <li><a href="#sobreMi">Sobre mí</a></li>
@@ -18,234 +23,260 @@
         <li><a href="#contacto">Contacto</a></li>
       </ul>
     </nav>
-    <header class="home" id="home">
-      <div class="home-content">
-        <h1 class="animated-title" id="logo">Roberto Perez Marin</h1>
-        <h2>Ingeniero en Sistemas Computacionales</h2>
-        <div class="buttons">
-          <a href="#proyectos"><button class="btn">Proyectos</button></a>
-          <a
-            href="assets/Currículum Vitae Cv de Marketing Minimalista Blanco y Negro (4).pdf"
-            target="_blank"
-            rel="noopener noreferrer"
-            ><button class="btn">Ver CV</button></a
-          >
-          <button class="btn">Contacto</button>
+
+    <!-- Contenido Principal -->
+    <main>
+      <!--Seccion de inicio-->
+      <section class="home" id="home">
+        <div class="home-content">
+          <h1 class="animated-title" id="logo">Roberto Perez Marin</h1>
+          <h2>Ingeniero en Sistemas Computacionales</h2>
+          <div class="buttons">
+            <a href="#proyectos" class="btn">Proyectos</a>
+            <a
+              href="assets/Currículum Vitae Cv de Marketing Minimalista Blanco y Negro (4).pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="btn"
+            >
+              Ver CV
+            </a>
+            <a href="#contacto" class="btn">Contacto</a>
+          </div>
         </div>
-      </div>
-    </header>
+      </section>
 
-    <section class="secciones" id="sobreMi">
-      <h2 class="subtitulo">Sobre mí</h2>
-      <div class="sobre-mi-contenido">
-        <p>
-          Soy un apasionado por el <strong>desarrollo de software</strong> y el
-          diseño de soluciones eficientes. Mi entusiasmo me impulsa a ser un
-          profesional <strong>responsable y organizado</strong>, lo cual me
-          lleva a disfrutar y contribuir activamente al trabajo en equipo.
-        </p>
-        <p>
-          Siempre estoy en busca de retos que me impulsen a crecer de manera
-          profesional. Poseo una gran
-          <strong>disposición para el aprendizaje continuo</strong>, lo cual me
-          permite abordar desafíos técnicos con total confianza.
-        </p>
-      </div>
-    </section>
-
-    <section class="secciones" id="skills">
-      <h2 class="subtitulo">Mis Skills</h2>
-      <div class="skills-container">
-        <!-- Frontend -->
-        <article class="skills-card">
-          <h3>Frontend</h3>
-          <ul class="skills-list">
-            <li><span>React.js</span></li>
-            <li><span>Vite</span></li>
-            <li><span>JavaScript (ES6+)</span></li>
-            <li><span>HTML5 & CSS3</span></li>
-          </ul>
-        </article>
-
-        <!-- Backend -->
-        <article class="skills-card">
-          <h3>Backend</h3>
-          <ul class="skills-list">
-            <li><span>PHP</span></li>
-            <li><span>Laravel (11 / 12)</span></li>
-            <li><span>Node.js</span></li>
-            <li><span>APIs RESTful</span></li>
-          </ul>
-        </article>
-
-        <!-- Bases de Datos & Herramientas -->
-        <article class="skills-card">
-          <h3>Bases de Datos & Herramientas</h3>
-          <ul class="skills-list">
-            <li><span>MySQL</span></li>
-            <li><span>PostgreSQL</span></li>
-            <li><span>Git & GitHub</span></li>
-            <li><span>Laravel Herd</span></li>
-          </ul>
-        </article>
-      </div>
-    </section>
-
-    <section class="secciones" id="proyectos">
-      <h2 class="subtitulo">Proyectos</h2>
-
-      <div class="proyectos-container">
-        <!-- PROYECTO 1 -->
-        <article class="tarjeta-proyecto">
-          <div class="proyecto-header">
-            <span class="tag-badge">Residencias Profesionales</span>
-            <h3>Módulo de Control de Almacenes para SIAC</h3>
-          </div>
-
-          <div class="proyecto-body">
-            <p class="proyecto-desc">
-              Desarrollo de un módulo integral para la gestión de inventarios,
-              enfocado en optimizar el flujo de entradas y salidas de
-              mercancías.
-            </p>
-
-            <p class="proyecto-impacto">
-              <strong>Impacto:</strong> Digitalización del control de stock,
-              permitiendo una administración eficiente y reducción de
-              discrepancias en almacén.
-            </p>
-
-            <div class="tech-tags">
-              <span>React.js</span>
-              <span>Laravel 11</span>
-              <span>MySQL</span>
-            </div>
-          </div>
-
-          <div class="proyecto-footer">
-            <span class="confidencial-text"
-              >🔒 Proyecto institucional / Propiedad de la empresa</span
-            >
-          </div>
-        </article>
-
-        <!-- PROYECTO 2 -->
-        <article class="tarjeta-proyecto">
-          <div class="proyecto-header">
-            <span class="tag-badge">Harmonizen</span>
-            <h3>Sistema de Análisis de Proceso de Adquisiciones</h3>
-          </div>
-
-          <div class="proyecto-body">
-            <p class="proyecto-desc">
-              Diseño e implementación de un sistema web para la automatización
-              del proceso de adquisiciones de compra, sustituyendo tareas
-              manuales por flujos lógicos automáticos.
-            </p>
-
-            <p class="proyecto-impacto">
-              <strong>Impacto:</strong> Optimización del ciclo de compras y
-              mejora en la trazabilidad de los procesos operativos de la
-              empresa.
-            </p>
-
-            <div class="tech-tags">
-              <span>React + Vite</span>
-              <span>Laravel 12</span>
-              <span>PostgreSQL</span>
-            </div>
-          </div>
-
-          <div class="proyecto-footer">
-            <span class="confidencial-text"
-              >🔒 Proyecto privado / Propiedad de la empresa</span
-            >
-          </div>
-        </article>
-
-        <!-- PROYECTO 3 -->
-        <article class="tarjeta-proyecto">
-          <div class="proyecto-header">
-            <span class="tag-badge">Alltub</span>
-            <h3>Sistema de Tickets para Solicitudes de Cotizaciones</h3>
-          </div>
-
-          <div class="proyecto-body">
-            <p class="proyecto-desc">
-              Creación de una plataforma de gestión de tickets para la
-              automatización de solicitudes de cotización de compras.
-            </p>
-
-            <p class="proyecto-impacto">
-              <strong>Impacto:</strong> Centralización de las solicitudes de
-              compra para Alltub, agilizando la gestión de presupuestos y la
-              respuesta de proveedores.
-            </p>
-
-            <div class="tech-tags">
-              <span>React + Vite</span>
-              <span>Laravel 12</span>
-              <span>PostgreSQL</span>
-            </div>
-          </div>
-
-          <div class="proyecto-footer">
-            <span class="confidencial-text"
-              >🔒 Proyecto privado / Propiedad de la empresa</span
-            >
-          </div>
-        </article>
-      </div>
-    </section>
-
-    <section class="secciones" id="contacto">
-      <h2 class="subtitulo">Contacto</h2>
-      <div class="contacto-container">
-        <p class="contacto-intro">
-          ¿Tienes un proyecto en mente o estás buscando incorporar a un
-          desarrollador a tu equipo? ¡Hablemos!
-        </p>
-
-        <div class="contacto-cards">
-          <!-- Correo -->
-          <a href="mailto:tu-correo@ejemplo.com" class="contacto-item">
-            <span class="contacto-icon">✉️</span>
-            <div class="contacto-text">
-              <span class="contacto-label">Email</span>
-              <span class="contacto-val">tu-correo@ejemplo.com</span>
-            </div>
-          </a>
-
-          <!-- LinkedIn -->
-          <a
-            href="https://linkedin.com/in/tu-usuario"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="contacto-item"
-          >
-            <span class="contacto-icon">💼</span>
-            <div class="contacto-text">
-              <span class="contacto-label">LinkedIn</span>
-              <span class="contacto-val">Roberto Pérez Marín</span>
-            </div>
-          </a>
-
-          <!-- GitHub -->
-          <a
-            href="https://github.com/tu-usuario"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="contacto-item"
-          >
-            <span class="contacto-icon">💻</span>
-            <div class="contacto-text">
-              <span class="contacto-label">GitHub</span>
-              <span class="contacto-val">github.com/tu-usuario</span>
-            </div>
-          </a>
+      <!-- SECCIÓN SOBRE MÍ -->
+      <section class="secciones" id="sobreMi">
+        <h2 class="subtitulo">Sobre mí</h2>
+        <div class="sobre-mi-contenido">
+          <p>
+            Soy un apasionado por el <strong>desarrollo de software</strong> y
+            el diseño de soluciones eficientes. Mi entusiasmo me impulsa a ser
+            un profesional <strong>responsable y organizado</strong>, lo cual me
+            lleva a disfrutar y contribuir activamente al trabajo en equipo.
+          </p>
+          <p>
+            Siempre estoy en busca de retos que me impulsen a crecer de manera
+            profesional. Poseo una gran
+            <strong>disposición para el aprendizaje continuo</strong>, lo cual
+            me permite abordar desafíos técnicos con total confianza.
+          </p>
         </div>
-      </div>
-    </section>
+      </section>
+
+      <!-- SECCIÓN SKILLS -->
+      <section class="secciones" id="skills">
+        <h2 class="subtitulo">Mis Skills</h2>
+        <div class="skills-container">
+          <!-- Frontend -->
+          <article class="skills-card">
+            <h3>Frontend</h3>
+            <ul class="skills-list">
+              <li><span>React.js</span></li>
+              <li><span>Vite</span></li>
+              <li><span>JavaScript (ES6+)</span></li>
+              <li><span>HTML5 & CSS3</span></li>
+            </ul>
+          </article>
+
+          <!-- Backend -->
+          <article class="skills-card">
+            <h3>Backend</h3>
+            <ul class="skills-list">
+              <li><span>PHP</span></li>
+              <li><span>Laravel (11 / 12)</span></li>
+              <li><span>Node.js</span></li>
+              <li><span>APIs RESTful</span></li>
+            </ul>
+          </article>
+
+          <!-- Bases de Datos & Herramientas -->
+          <article class="skills-card">
+            <h3>Bases de Datos & Herramientas</h3>
+            <ul class="skills-list">
+              <li><span>MySQL</span></li>
+              <li><span>PostgreSQL</span></li>
+              <li><span>Git & GitHub</span></li>
+              <li><span>Laravel Herd</span></li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <!-- SECCIÓN PROYECTOS -->
+      <section class="secciones" id="proyectos">
+        <h2 class="subtitulo">Proyectos</h2>
+
+        <div class="proyectos-container">
+          <!-- PROYECTO 1 -->
+          <article class="tarjeta-proyecto">
+            <header class="proyecto-header">
+              <span class="tag-badge">Residencias Profesionales</span>
+              <h3>Módulo de Control de Almacenes para SIAC</h3>
+            </header>
+
+            <div class="proyecto-body">
+              <p class="proyecto-desc">
+                Desarrollo de un módulo integral para la gestión de inventarios,
+                enfocado en optimizar el flujo de entradas y salidas de
+                mercancías.
+              </p>
+
+              <p class="proyecto-impacto">
+                <strong>Impacto:</strong> Digitalización del control de stock,
+                permitiendo una administración eficiente y reducción de
+                discrepancias en almacén.
+              </p>
+
+              <div class="tech-tags">
+                <span>React.js</span>
+                <span>Laravel 11</span>
+                <span>MySQL</span>
+              </div>
+            </div>
+
+            <footer class="proyecto-footer">
+              <span class="confidencial-text">
+                🔒 Proyecto institucional / Propiedad de la empresa
+              </span>
+            </footer>
+          </article>
+
+          <!-- PROYECTO 2 -->
+          <article class="tarjeta-proyecto">
+            <header class="proyecto-header">
+              <span class="tag-badge">Harmonizen</span>
+              <h3>Sistema de Análisis de Proceso de Adquisiciones</h3>
+            </header>
+
+            <div class="proyecto-body">
+              <p class="proyecto-desc">
+                Diseño e implementación de un sistema web para la automatización
+                del proceso de adquisiciones de compra, sustituyendo tareas
+                manuales por flujos lógicos automáticos.
+              </p>
+
+              <p class="proyecto-impacto">
+                <strong>Impacto:</strong> Optimización del ciclo de compras y
+                mejora en la trazabilidad de los procesos operativos de la
+                empresa.
+              </p>
+
+              <div class="tech-tags">
+                <span>React + Vite</span>
+                <span>Laravel 12</span>
+                <span>PostgreSQL</span>
+              </div>
+            </div>
+
+            <footer class="proyecto-footer">
+              <span class="confidencial-text">
+                🔒 Proyecto privado / Propiedad de la empresa
+              </span>
+            </footer>
+          </article>
+
+          <!-- PROYECTO 3 -->
+          <article class="tarjeta-proyecto">
+            <header class="proyecto-header">
+              <span class="tag-badge">Alltub</span>
+              <h3>Sistema de Tickets para Solicitudes de Cotizaciones</h3>
+            </header>
+
+            <div class="proyecto-body">
+              <p class="proyecto-desc">
+                Creación de una plataforma de gestión de tickets para la
+                automatización de solicitudes de cotización de compras.
+              </p>
+
+              <p class="proyecto-impacto">
+                <strong>Impacto:</strong> Centralización de las solicitudes de
+                compra para Alltub, agilizando la gestión de presupuestos y la
+                respuesta de proveedores.
+              </p>
+
+              <div class="tech-tags">
+                <span>React + Vite</span>
+                <span>Laravel 12</span>
+                <span>PostgreSQL</span>
+              </div>
+            </div>
+
+            <footer class="proyecto-footer">
+              <span class="confidencial-text">
+                🔒 Proyecto privado / Propiedad de la empresa
+              </span>
+            </footer>
+          </article>
+        </div>
+      </section>
+
+      <!-- SECCIÓN CONTACTO -->
+      <section class="secciones" id="contacto">
+        <h2 class="subtitulo">Contacto</h2>
+        <div class="contacto-container">
+          <p class="contacto-intro">
+            ¿Tienes un proyecto en mente o estás buscando incorporar a un
+            desarrollador a tu equipo? ¡Hablemos!
+          </p>
+
+          <div class="contacto-cards">
+            <!-- Correo -->
+            <a href="mailto:robertcp.m03@gmail.com" class="contacto-item">
+              <span class="contacto-icon" aria-hidden="true">✉️</span>
+              <div class="contacto-text">
+                <span class="contacto-label">Email</span>
+                <span class="contacto-val">robertcp.m03@gmail.com</span>
+              </div>
+            </a>
+
+            <!-- LinkedIn -->
+            <a
+              href="https://linkedin.com/in/tu-usuario"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="contacto-item"
+            >
+              <span class="contacto-icon" aria-hidden="true">💼</span>
+              <div class="contacto-text">
+                <span class="contacto-label">LinkedIn</span>
+                <span class="contacto-val">Roberto Pérez Marín</span>
+              </div>
+            </a>
+            <!-- WhatsApp -->
+            <a
+              href="https://wa.me/525631650242?text=Hola%20Roberto,%20vi%20tu%20portafolio%20y%20me%20gustaría%20contactarte"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="contacto-item"
+            >
+              <span class="contacto-icon" aria-hidden="true">💬</span>
+              <div class="contacto-text">
+                <span class="contacto-label">WhatsApp</span>
+                <span class="contacto-val">Enviar mensaje</span>
+              </div>
+            </a>
+
+            <!-- GitHub -->
+            <a
+              href="https://github.com/RobertoPM10"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="contacto-item"
+            >
+              <span class="contacto-icon" aria-hidden="true">💻</span>
+              <div class="contacto-text">
+                <span class="contacto-label">GitHub</span>
+                <span class="contacto-val">github.com/RobertoPM10</span>
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Scripts -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
     <script src="js/efecto.js"></script>
   </body>

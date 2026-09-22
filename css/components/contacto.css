@@ -13,10 +13,12 @@
 }
 
 .contacto-cards {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   gap: 20px;
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
 }
 
 .contacto-item {
