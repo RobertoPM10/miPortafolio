@@ -4,33 +4,38 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/css/style.css" />
-    <link rel="stylesheet" href="css/efectoLetras.css">
+    <link rel="stylesheet" href="css/efectoLetras.css" />
     <title>Mi portafolio</title>
   </head>
   <body>
+    <nav class="menu">
+      <span class="logo"><a href="#home">RPM</a></span>
+      <ul>
+        <li><a href="#home">inicio</a></li>
+        <li><a href="#sobreMi">Sobre mí</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
     <header class="home" id="home">
-      <nav class="menu">
-        <span class="logo">RPM</span>
-        <ul>
-          <li><a href="#home">inicio</a></li>
-          <li><a href="#sobreMi">Sobre mí</a></li>
-          <li>Skills</li>
-          <li>Contacto</li>
-        </ul>
-      </nav>
       <div class="home-content">
         <h1 class="animated-title" id="logo">Roberto Perez Marin</h1>
         <h2>Ingeniero en Sistemas Computacionales</h2>
         <div class="buttons">
-          <a href="#proyectos"><button class="btn" >Proyectos</button></a>
-          <a href="assets/Currículum Vitae Cv de Marketing Minimalista Blanco y Negro (4).pdf" target="_blank" rel="noopener noreferrer"><button class="btn">Ver CV</button></a>
+          <a href="#proyectos"><button class="btn">Proyectos</button></a>
+          <a
+            href="assets/Currículum Vitae Cv de Marketing Minimalista Blanco y Negro (4).pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            ><button class="btn">Ver CV</button></a
+          >
           <button class="btn">Contacto</button>
         </div>
       </div>
     </header>
 
-    <section class="sobreMi" id="sobreMi">
-      <h2 >Sobre mí</h2>
+    <section class="secciones" id="sobreMi">
+      <h2 class="subtitulo">Sobre mí</h2>
       <div class="sobre-mi-contenido">
         <p>
           Soy un apasionado por el <strong>desarrollo de software</strong> y el
@@ -46,8 +51,105 @@
         </p>
       </div>
     </section>
-    <section class="proyectos" id="proyectos">
-        <h2>proyectos</h2>
+
+    <section class="secciones" id="skills">
+      <h2 class="subtitulo">Mis Skills</h2>
+    </section>
+    
+    <section class="secciones" id="proyectos">
+  <h2 class="subtitulo">Proyectos</h2>
+
+  <div class="proyectos-container">
+
+    <!-- PROYECTO 1 -->
+    <article class="tarjeta-proyecto">
+      <div class="proyecto-header">
+        <span class="tag-badge">Residencias Profesionales</span>
+        <h3>Módulo de Control de Almacenes para SIAC</h3>
+      </div>
+      
+      <div class="proyecto-body">
+        <p class="proyecto-desc">
+          Desarrollo de un módulo integral para la gestión de inventarios, enfocado en optimizar el flujo de entradas y salidas de mercancías.
+        </p>
+
+        <p class="proyecto-impacto">
+          <strong>Impacto:</strong> Digitalización del control de stock, permitiendo una administración eficiente y reducción de discrepancias en almacén.
+        </p>
+
+        <div class="tech-tags">
+          <span>React.js</span>
+          <span>Laravel 11</span>
+          <span>MySQL</span>
+        </div>
+      </div>
+
+      <div class="proyecto-footer">
+        <span class="confidencial-text">🔒 Proyecto institucional / Propiedad de la empresa</span>
+      </div>
+    </article>
+
+    <!-- PROYECTO 2 -->
+    <article class="tarjeta-proyecto">
+      <div class="proyecto-header">
+        <span class="tag-badge">Harmonizen</span>
+        <h3>Sistema de Análisis de Proceso de Adquisiciones</h3>
+      </div>
+      
+      <div class="proyecto-body">
+        <p class="proyecto-desc">
+          Diseño e implementación de un sistema web para la automatización del proceso de adquisiciones de compra, sustituyendo tareas manuales por flujos lógicos automáticos.
+        </p>
+
+        <p class="proyecto-impacto">
+          <strong>Impacto:</strong> Optimización del ciclo de compras y mejora en la trazabilidad de los procesos operativos de la empresa.
+        </p>
+
+        <div class="tech-tags">
+          <span>React + Vite</span>
+          <span>Laravel 12</span>
+          <span>PostgreSQL</span>
+        </div>
+      </div>
+
+      <div class="proyecto-footer">
+        <span class="confidencial-text">🔒 Proyecto privado / Propiedad de la empresa</span>
+      </div>
+    </article>
+
+    <!-- PROYECTO 3 -->
+    <article class="tarjeta-proyecto">
+      <div class="proyecto-header">
+        <span class="tag-badge">Alltub</span>
+        <h3>Sistema de Tickets para Solicitudes de Cotizaciones</h3>
+      </div>
+      
+      <div class="proyecto-body">
+        <p class="proyecto-desc">
+          Creación de una plataforma de gestión de tickets para la automatización de solicitudes de cotización de compras.
+        </p>
+
+        <p class="proyecto-impacto">
+          <strong>Impacto:</strong> Centralización de las solicitudes de compra para Alltub, agilizando la gestión de presupuestos y la respuesta de proveedores.
+        </p>
+
+        <div class="tech-tags">
+          <span>React + Vite</span>
+          <span>Laravel 12</span>
+          <span>PostgreSQL</span>
+        </div>
+      </div>
+
+      <div class="proyecto-footer">
+        <span class="confidencial-text">🔒 Proyecto privado / Propiedad de la empresa</span>
+      </div>
+    </article>
+
+  </div>
+</section>
+
+    <section class="secciones" id="contacto">
+      <h2 class="subtitulo">Contacto</h2>
     </section>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
     <script src="js/efecto.js"></script>
