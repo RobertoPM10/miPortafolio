@@ -3,7 +3,7 @@
 @import './base/global.css';
 
 /* Componentes Comunes */
-@import './components/navbar.css';
+@import './components/navBar.css';
 @import './components/buttons.css';
 
 /* Secciones */
