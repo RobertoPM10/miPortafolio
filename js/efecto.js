@@ -1,4 +1,3 @@
-// Paleta de colores para el halo de luz (glow)
 const HOVER_COLORS = [
   { color: '#00ff88', glow: 'rgba(0, 255, 136, 0.45)' },
   { color: '#00e5ff', glow: 'rgba(0, 229, 255, 0.45)' },
@@ -9,33 +8,43 @@ const HOVER_COLORS = [
 
 const getRandomColor = () => HOVER_COLORS[Math.floor(Math.random() * HOVER_COLORS.length)];
 
-// 1. Seleccionar TODOS los elementos con la clase .animated-title
 const titulosAnimados = document.querySelectorAll('.animated-title');
 
 titulosAnimados.forEach((titulo) => {
   // Accesibilidad
   titulo.setAttribute('aria-label', titulo.textContent.trim());
 
-  // Fragmentación por <br>
-  const lineas = titulo.innerHTML.split(/<br\s*\/?>/i);
+  // Dividir por líneas según los <br>
+  const lineasTexto = titulo.innerHTML.split(/<br\s*\/?>/i);
   titulo.innerHTML = '';
 
-  lineas.forEach((linea, index) => {
-    const textoLimpio = linea.replace(/<[^>]*>/g, '');
+  lineasTexto.forEach((linea) => {
+    const textoLimpio = linea.replace(/<[^>]*>/g, '').trim();
+    if (!textoLimpio) return;
+
+    // Crear un contenedor de bloque por cada línea para forzar el centrado
+    const lineaContainer = document.createElement('div');
+    lineaContainer.style.display = 'block';
+    lineaContainer.style.textAlign = 'center';
+    lineaContainer.style.width = '100%';
 
     [...textoLimpio].forEach(char => {
       const span = document.createElement('span');
       span.className = 'char';
-      span.textContent = char === ' ' ? '\u00A0' : char;
-      titulo.appendChild(span);
+      
+      if (char === ' ') {
+        span.innerHTML = '&nbsp;';
+      } else {
+        span.textContent = char;
+      }
+      
+      lineaContainer.appendChild(span);
     });
 
-    if (index < lineas.length - 1) {
-      titulo.appendChild(document.createElement('br'));
-    }
+    titulo.appendChild(lineaContainer);
   });
 
-  // 2. Animar ÚNICAMENTE los .char pertenecientes a este título en particular
+  // Animar los .char pertenecientes a este título
   const letrasDeEsteTitulo = titulo.querySelectorAll('.char');
 
   const tl = gsap.timeline({ repeat: -1, repeatDelay: 0.5 });
